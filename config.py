@@ -1,4 +1,4 @@
-config.py 
+#config.py 
 from os import environ
 
 # Telegram Account Api Id And Api Hash
@@ -19,5 +19,3 @@ MONGO_DB_URI = environ.get("MONGO_DB_URI", "mongodb+srv://wanglinmongodb:wanglin
 
 # Port To Run Web Application 
 PORT = int(environ.get('PORT', 8080))
-
-#အဲ့တာကို .env နဲ့အသုံးပြုလို့ရအောင်ပြင်ဆင်ပေး
