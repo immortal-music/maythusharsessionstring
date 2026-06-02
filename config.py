@@ -2,8 +2,8 @@
 from os import environ
 
 # Telegram Account Api Id And Api Hash
-API_ID = int(environ.get("API_ID", "24140875"))
-API_HASH = environ.get("API_HASH", "4386e721d5e41515ba9ea594555c37ac")
+API_ID = int(environ.get("API_ID", "20078321"))
+API_HASH = environ.get("API_HASH", "c8ed904e4aac83cea1f27b73984debad")
 
 # Your Main Bot Token 
 BOT_TOKEN = environ.get("BOT_TOKEN", "8431050510:AAEu8WZD2FlFpzYapaDrnLWUMXPHVGhaBSg")
