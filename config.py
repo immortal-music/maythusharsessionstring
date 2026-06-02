@@ -1,20 +1,24 @@
-from os import environ
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Telegram Account Api Id And Api Hash
-API_ID = int(environ.get("API_ID", "24140875"))
-API_HASH = environ.get("API_HASH", "4386e721d5e41515ba9ea594555c37ac")
+API_ID = int(os.getenv("API_ID", "24140875"))
+API_HASH = os.getenv("API_HASH", "4386e721d5e41515ba9ea594555c37ac")
 
 # Your Main Bot Token 
-BOT_TOKEN = environ.get("BOT_TOKEN", "8431050510:AAEIQjKzg0vGtz5Kloc8N8jyBzV8P1cE51A")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "")
 
 # Owner ID For Broadcasting 
-OWNER_ID = int(environ.get("OWNER_ID", "1318826936")) # Owner Id or Admin Id
+OWNER_ID = int(os.getenv("OWNER_ID", "1318826936")) # Owner Id or Admin Id
 
 # Give Your Force Subscribe Channel Id Below And Make Bot Admin With Full Right.
-F_SUB = environ.get("F_SUB", "")
+F_SUB = os.getenv("F_SUB", "")
 
 # Mongodb Database Uri For User Data Store 
-MONGO_DB_URI = environ.get("MONGO_DB_URI", "mongodb+srv://wanglinmongodb:wanglin@renegadeimmortal.o1qj9yf.mongodb.net/?retryWrites=true&w=majority")
+MONGO_DB_URI = os.getenv("MONGO_DB_URI", "")
 
 # Port To Run Web Application 
-PORT = int(environ.get('PORT', 8080))
+PORT = int(os.getenv('PORT', 8080))
